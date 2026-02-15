@@ -1,0 +1,14 @@
+name: Coderco
+
+on: [push]
+
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout Coderco
+      uses: actions/checkout@v2
+    - name: We are testing this version
+      run: echo hello
+      

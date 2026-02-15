@@ -11,4 +11,6 @@ jobs:
       uses: actions/checkout@v2
     - name: We are testing this version
       run: echo hello
-      
+    
+    - name: use secret 
+      run: echo the secret is "${{ secret.MY_SECRET }}"

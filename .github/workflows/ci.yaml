@@ -1,0 +1,19 @@
+name: task1 
+
+on:
+  push:
+  pull_request:
+
+jobs:
+   build:
+     runs-on: ubuntu-latest
+     steps: 
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+     
+      - name: Install Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: checkout code
+        run: terraform fmt -check -recursive

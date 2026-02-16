@@ -12,4 +12,7 @@ jobs:
       run: echo hello
     
     - name: use secret 
-      run: echo the secret is "${{ secret.MY_SECRET }}"
+      run: echo the secret is "new secret"
+
+    - name: Checkoutv2
+      uses: actions/checkout@v4

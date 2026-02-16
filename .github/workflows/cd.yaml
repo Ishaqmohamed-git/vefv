@@ -12,6 +12,8 @@ jobs:
     - name: docker simulation
       uses: mr-smithers-excellent/docker-build-push@v6.8
       with:
+        image: ishaqmo/task2-validation
+        registry: docker.io
        username: ${{ secrets.DOCKER_USERNAME }}
        password: ${{ secrets.DOCKER_TOKENS }} 
 
